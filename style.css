@@ -1,0 +1,63 @@
+body{
+    background: black;
+    color: white;
+    margin: 0px;
+  }
+  a{
+      color: inherit;
+      text-decoration: none;
+
+  }
+  .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .topNavBar {
+      padding: 20px 16px 20px 16px;
+
+  }
+  .topNavBar .logo {
+    font-family: "Arial Black";
+    font-size: 24px;
+    padding-top: 1px;
+  }
+  .topNavBar .logo .rs{
+    color: #e6686a;
+    margin-right: 4px;
+  }
+  .topNavBar .logo .card{
+    color: #9A9DA2;
+  }
+  
+  .topNavBar > nav {
+    padding-top: 8px;
+  }
+  
+  .topNavBar > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .topNavBar > nav > ul > li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+
+  }
+  .topNavBar > nav > ul > li > a {
+    font-size: 12px;
+    color: #b7b7b7;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+
+  }
+  .topNavBar > nav > ul > li > a:hover {
+    border-bottom: 3px solid #E06567;
+  }
+  
