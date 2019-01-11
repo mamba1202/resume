@@ -1,5 +1,5 @@
 body{
-    background: rgb{239,239,239};
+    background: #efefef;
     margin: 0px;
   }
   *{
@@ -90,7 +90,7 @@ body{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFF; 
+    background-color: #ffffff; 
   }
   .userCard .welcome{
    background: #E6686A;
