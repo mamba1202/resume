@@ -26,6 +26,16 @@ body{
   h1,h,h3,h4,h5{
     font-weight: normal;
   }
+  [data-x].active{
+    outline: 10px solid red;
+  }
+  [data-x].offest{
+    transform: translateY(200px);
+  }
+  [data-x]{
+    transform: translateY(0);
+    transition: all 0.5s;
+  }
   
   .topNavBar {
       padding: 20px 0px 20px 0px;
@@ -84,7 +94,8 @@ body{
     display: block;
     position: relative;
   }
-  .topNavBar nav > ul > li.active > a::after {
+  .topNavBar nav > ul > li.active > a::after,
+  .topNavBar nav > ul > li.highlight > a::after{
     content: '';
     display: block;
     position: absolute;
@@ -291,13 +302,18 @@ height: 5px;
 background: #FAE1E1;
 border-radius: 2px;
 margin: 4px 0 40px;
+overflow: hidden;
 }
 section.skills .progressBar > .progress {
-height: 100%;
-background: #E6686A;
-width: 70%;
-border-radius: 2px;
-}
+   height: 100%;
+   background: #E6686A; 
+   width: 70%; 
+   border-radius: 2px;
+   transform: translateX(0); transition: all 1s;
+   }
+section.skills.offest .progress{
+  transform: translateX(-100%);
+  }
 section.portfolio {
 text-align: center;
 margin-bottom: 100px;
@@ -312,7 +328,7 @@ vertical-align: top;
 }
 section.portfolio > nav > ol > li{
 float: left;
-margin-left: 40px;
+margin-left: 40px;                
 cursor: pointer
 }
 section.portfolio > nav > ol > li:first-child{
