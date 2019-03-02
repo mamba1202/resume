@@ -183,26 +183,30 @@
   </section>
   <section data-x id="siteWorks" class="portfolio">
     <h2>作品集</h2>
-    <!--变成轮播-->
-    <!-- Slider main container -->
-    <div class="swiper-container">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <img src="./img/works/nav-page.jpg" class="swiper-slide">
-        <img src="./img/works/canvas.jpg" class="swiper-slide">
-        <img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
+    <div id="mySlides">
+      <!--变成轮播-->
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img src="./img/works/nav-page.jpg" class="swiper-slide">
+          <img src="./img/works/canvas.jpg" class="swiper-slide">
+          <img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+
 
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
   <script src="./js/init-swiper.js"></script>
   <script src="./js/auto-slide-up.js"></script>
   <script src="./js/sticky-topbar.js"></script>
