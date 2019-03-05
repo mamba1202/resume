@@ -1,6 +1,5 @@
 !function () {
     var view =document.querySelector('nav.menu')
-    view.style.border = '1px solid red'
     let aTags = view.querySelectorAll('nav.menu > ul > li > a')
     function animate(time) {
         requestAnimationFrame(animate);

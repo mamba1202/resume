@@ -1,6 +1,5 @@
 !function () {
   var view = document.querySelector('#topNavBar')
-  view.style.border = '1px solid red'
   window.addEventListener('scroll', function (xxx) {
     if (window.scrollY > 0) {
       view.classList.add('sticky')
