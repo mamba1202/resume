@@ -33,8 +33,8 @@
         e.preventDefault()
         let content = myForm.querySelector('input[name=content]').value
         let name = myForm.querySelector('input[name=name]').value
-        var Message = AV.Object.extend('Message');
-        var message = new Message();
+        let Message = AV.Object.extend('Message');
+        let message = new Message();
         message.save({
             'name': name,
             'content': content
